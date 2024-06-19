@@ -7,7 +7,7 @@ def roman_to_int(roman):
     i = 0
     while i < len(roman):
         current_value = roman_map[roman[i]]
-            if i + 1 < len(roman):
+        if i + 1 < len(roman):
             next_value = roman_map[roman[i + 1]]
             if current_value >= next_value:
                 result += current_value
@@ -29,5 +29,3 @@ def int_to_roman(num):
             num -= val[i]
     return roman_num
 
-print(int_to_roman(3549))
-print(roman_to_int('MMMDXLIX'))
